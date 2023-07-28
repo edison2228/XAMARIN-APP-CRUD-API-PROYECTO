@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asistencia_Personal.Menu">
+    <ContentPage.Content>
+        <StackLayout>
+            <Button x:Name="btnRegistrojz" Text="JEFATURA" Clicked="btnRegistrojz_Clicked" BackgroundColor="White" />
+            <Button x:Name="btnRegistroAct" Text="EMPLEADO" Clicked="btnRegistroAct_Clicked" BackgroundColor="White" />
+
+            <Button x:Name="btnConsuktaUser" Text="USUARIO" Clicked="btnConsuktaUser_Clicked"  BackgroundColor="White"/>
+            <Button x:Name="btnConsultarUser" Text="Consultar Usuario" Clicked="btnConsultar_Clicked"  BackgroundColor="White"/>
+            
+            <Button x:Name="btnRgusuario" Text="RgUsuario" Clicked="btnRgusuario_Clicked" BackgroundColor="White"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

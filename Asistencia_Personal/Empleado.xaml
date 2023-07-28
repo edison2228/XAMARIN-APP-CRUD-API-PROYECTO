@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Asistencia_Personal.Empleado">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nuevo Empleado" TextColor="Green" FontSize="18" HorizontalOptions="Center" />
+
+
+            <Entry x:Name="txtTblActANombres" Placeholder="Ingrese Nombres" />
+            <Entry x:Name="txtTblActApellido" Placeholder="Ingrese Apellidos"  />
+            <Entry x:Name="txtTblActCedula" Placeholder="Ingrese cedula" Keyboard="Numeric" />
+            <Entry x:Name="txtTblActCodigo" Placeholder="Ingese ACT" />
+            <Picker x:Name="pkGenero" SelectedIndexChanged="pkGenero_SelectedIndexChanged"/>
+       
+            <Entry x:Name="txtTblActObservacines" Placeholder="ingrese comentario"  />
+
+            <Button x:Name="btnGuardarJZ" Clicked="btnGuardarJZ_Clicked" Text="GUARDAR" BorderColor="ForestGreen" BorderWidth="1.5"  CornerRadius="50" BackgroundColor="Transparent" FontSize="20"/>
+
+            <Button x:Name="btnConsultar" Clicked="btnConsultar_Clicked_1" Text="consultar" BorderColor="ForestGreen" BorderWidth="1.5"  CornerRadius="50" BackgroundColor="Transparent" FontSize="20"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovilAMT.Vistas.Login" 
+             BackgroundColor="#112b47" NavigationPage.HasNavigationBar="False" Title="SALUDOS">
+    
+
+    <ContentPage.Content>
+
+        <StackLayout Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Label Text="LOGIN" FontSize="20" HorizontalOptions="Center" TextColor="Red"/>
+            <Image Source="AMtimagen.jpg" WidthRequest="100" HeightRequest="100" />
+            
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    
+                </Grid.RowDefinitions>
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/> 
+                </Grid.ColumnDefinitions>
+                <Entry x:Name="txtUser" FontSize="15" PlaceholderColor="White" IsEnabled="True"  TextColor="White" HorizontalTextAlignment="Center" Grid.Row="0" Grid.Column="1" />
+                <Entry x:Name="txtPass"  FontSize="15" PlaceholderColor="White" TextColor="White" HorizontalTextAlignment="Center" IsPassword="True" Grid.Row="1" Grid.Column="1"/>
+                <Label Text="USER:" FontSize="15" HorizontalOptions="Center" Grid.Row="0" Grid.Column="0" TextColor="White"/>
+                <Label Text="PASS:" FontSize="15" HorizontalOptions="Center" Grid.Row="1" Grid.Column="0" TextColor="White"/>
+                <Label Text="" HeightRequest="50
+                       "/>
+                 </Grid>
+            <Button x:Name="btnIniciar" Clicked="btnIniciar_Clicked" BackgroundColor="Transparent" TextColor="White" FontSize="20" 
+                      BorderColor="ForestGreen"  Text="INICIAR"  BorderWidth="1.5" CornerRadius="50"/>
+            <Button x:Name="btnRegistro" Clicked="btnRegistro_Clicked" BorderColor="ForestGreen" BorderWidth="1.5"  CornerRadius="50" BackgroundColor="Transparent" FontSize="20" Text="REGISTRAR" TextColor="White"/>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
